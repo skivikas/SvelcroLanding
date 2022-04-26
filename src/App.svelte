@@ -22,7 +22,7 @@
 <!-- Testimonials -->
 <Testimonials testimonialData={DATA.TESTIMONIAL_DATA} />
 <!-- Social Media -->
-<Social socialData={DATA.SOCIAL_DATA} />
+<!-- <Social socialData={DATA.SOCIAL_DATA} /> -->
 <!-- Footer -->
 <Footer footerData={DATA.FOOTER_DATA} header={DATA.HEADER} />
 

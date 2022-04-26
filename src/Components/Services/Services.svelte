@@ -74,7 +74,7 @@
       border: none;
     }
 
-    button {
-        color: #ff3e00;
+    .btn {
+        background-color: #ff3e00;
     }
 </style>

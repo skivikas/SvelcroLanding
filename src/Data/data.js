@@ -2,9 +2,9 @@ const HEADER = "SVELCRO";
 
 const NAVBAR_DATA = [
   { id: 1, url: "/", label: "Home" },
-  { id: 2, url: "#services", label: "Services" },
+  { id: 2, url: "#services", label: "Features" },
   { id: 3, url: "#about-us", label: "About us" },
-  { id: 4, url: "#testimonials", label: "Testimonials" },
+  { id: 4, url: "#testimonials", label: "Team" },
   { id: 5, url: "#footer", label: "Contacts" }
 ];
 const BANNER_DATA = {
@@ -12,8 +12,8 @@ const BANNER_DATA = {
   DECRIPTION:
     "Svelcro can help you view application architecture, component state, and performance information like render counts and times",
   TUTORIAL_URL:
-    "https://www.thinkwithgoogle.com/intl/en-gb/marketing-resources/programmatic/google-digital-academy/",
-  WATCH_TUTORIAL: "Watch Tutorials"
+    "images/github.png",
+  WATCH_TUTORIAL: "Contribute"
 };
 const SERVICE_DATA = {
   HEADING: "Features",
@@ -56,7 +56,7 @@ const ABOUT_DATA = {
   ]
 };
 const TESTIMONIAL_DATA = {
-  HEADING: "Meet our Team",
+  HEADING: "Our Team",
   TESTIMONIAL_LIST: [
     {
     //   DESCRIPTION:
@@ -75,7 +75,7 @@ const TESTIMONIAL_DATA = {
     {
         // DESCRIPTION:
         //   "Nixalar and his team have provided us with a comprehensive, fast and well planned digital marketing strategy that has yielded great results in terms of content, SEO, Social Media. His team are a pleasure to work with, as well as being fast to respond and adapt to the needs of your brand.",
-        IMAGE_URL: "images/user2.jpg",
+        IMAGE_URL: "images/sara.png",
         NAME: "Sara Kivikas",
         DESIGNATION: "Software Engineer"
       },
@@ -103,11 +103,9 @@ const SOCIAL_DATA = {
 
 const FOOTER_DATA = {
   DESCRIPTION:
-    "We are typically focused on result-based maketing in the digital world. Also, we evaluate your brand’s needs and develop a powerful strategy that maximizes profits.",
+    "Svelcro is Open Source. Help make our tool even better:",
   CONTACT_DETAILS: {
     HEADING: "Contact us",
-    ADDRESS: "La trobe street docklands, Melbourne",
-    MOBILE: "+1 61234567890",
     EMAIL: "sveltedt@gmail.com"
   },
   SUBSCRIBE_NEWSLETTER: "Subscribe newsletter",

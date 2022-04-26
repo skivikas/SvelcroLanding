@@ -16,8 +16,8 @@
   <!----------------MARKUP----------------------->
   <!------------------------------------------->
   <section class="main-bgcolor light-color" id="footer" >
-    <bg-img src="images/dots.png" alt="" class="wave-img" />
-    <div style="background-image: images/dots.png" />
+    <!-- <bg-img src="images/dots.png" alt="" class="wave-img" /> -->
+    <div/>
     <div class="container">
       <div class="row section-body">
         <div class="col-md-4 footer-box">
@@ -27,27 +27,9 @@
         <div class="col-md-4 footer-box">
           <p class="footer-title">{HEADING}</p>
           <p>
-            <i class="fas fa-map-marker-alt" />
-            {ADDRESS}
-          </p>
-          <p>
-            <i class="fas fa-phone" />
-            {MOBILE}
-          </p>
-          <p>
             <i class="fas fa-envelope" />
             {EMAIL}
           </p>
-        </div>
-        <div class="col-md-4 footer-box">
-          <p class="footer-title">{SUBSCRIBE_NEWSLETTER}</p>
-          <input
-            type="email"
-            class="form-control round-border"
-            placeholder="Your Email" />
-          <button type="button" class="btn btn-outline-light round-border">
-            {SUBSCRIBE}
-          </button>
         </div>
       </div>
     </div>
