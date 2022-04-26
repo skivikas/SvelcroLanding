@@ -1,0 +1,111 @@
+:root {
+	--gradient: linear-gradient(180deg, #ff3e00 30%, rgb(30, 30, 30) 20%);
+	--light: rgb(0, 0, 0);
+	--grey: #000000;
+	/* background-color: black; */
+
+  }  
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+  	padding: 0;
+  	font-family: Arial, Helvetica, sans-serif;
+  	scroll-behavior: smooth;
+
+}
+
+body {
+	color: #333;
+	margin: 0;
+	/* padding: 8px; */
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	
+}
+
+a {
+	color: #ff3e00;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff3e00;
+}
+
+a:visited {
+	color: #9d2700;
+}
+
+h2, h3, h4, p {
+	color: white;
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
+
+.main-bgcolor {
+	background-image: linear-gradient(180deg, #ff3e00 10%, rgb(30, 30, 30) 60%);
+  }
+
+.light-color {
+color: var(--light) !important;
+}
+
+.grey-bgcolor {
+background: var(ff3e00);
+}
+
+.company_brand {
+font-size: x-large;
+font-family: Arial, Helvetica, sans-serif;;
+}
+
+.section {
+padding: 50px 0;
+background-color: rgb(30, 30, 30);
+
+}
+
+.section-body {
+padding: 20px 0;
+
+}
+
