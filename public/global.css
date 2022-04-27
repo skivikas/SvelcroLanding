@@ -2,8 +2,9 @@
 	--gradient: linear-gradient(180deg, #ff3e00 30%, rgb(30, 30, 30) 20%);
 	--light: rgb(0, 0, 0);
 	--grey: #000000;
-	/* background-color: black; */
+	background-color: rgb(30, 30, 30);
 
+	
   }  
 
 html, body {
