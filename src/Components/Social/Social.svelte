@@ -7,15 +7,15 @@
   <!------------------------------------------->
   <!----------------MARKUP----------------------->
   <!------------------------------------------->
-  <section id="social-media" class="section grey-bgcolor">
+  <section id="social-media" class="section-grey-bgcolor">
     <div class="container text-center">
       <h2 class="title text-center">{HEADING}</h2>
       <div class="social-icons section-body">
         {#each IMAGES_LIST as list}
           <a
-            href="https://www.linkedin.com/in/nikhil-karkra-73a15319/"
+            href={list.URL}
             target="_blank">
-            <img src={list} alt="Social media {list}" />
+            <img src={list.ICON} alt="Social media {list}" />
           </a>
         {/each}
       </div>
@@ -34,5 +34,13 @@
     }
     a:hover {
       text-decoration: none;
+    }
+
+    .section-grey-bgcolor {
+      background-color: #1f1f1f;
+    }
+    
+    #social-media {
+      background-color: #1f1f1f;
     }
   </style>

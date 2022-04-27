@@ -9,8 +9,11 @@
   <!------------------------------------------->
   <section id="nav-bar">
     <nav class="navbar navbar-expand-md navbar-dark">
-      <a class="navbar-brand company_brand" href="/">
+      <!-- <a class="navbar-brand company_brand" href="/">
         {header}
+      </a> -->
+      <a  href="https://opensourcelabs.io/">
+        <img id="oslabs" src="images/OSlabs.png"/>
       </a>
       <button
         class="navbar-toggler"
@@ -37,6 +40,11 @@
   <!----------------STYLE----------------------->
   <!------------------------------------------->
   <style>
+    #oslabs {
+      width: 120px;
+      height: 60px;
+    }
+    
     #nav-bar {
       position: sticky;
       top: 0;

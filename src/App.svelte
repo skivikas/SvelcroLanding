@@ -5,7 +5,7 @@
 	import Services from "./Components/Services/Services.svelte";
 	import About from "./Components/About/About.svelte";
 	import Testimonials from "./Components/Testimonials/Testimonials.svelte";
-	import Social from "./Components/Social/Social.svelte";
+	// import Social from "./Components/Social/Social.svelte";
 	import Footer from "./Components/Footer/Footer.svelte";
 	import DATA from "./Data/data";
 </script>

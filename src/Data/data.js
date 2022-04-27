@@ -1,104 +1,137 @@
-const HEADER = "SVELCRO";
+const HEADER = "Svelcro";
 
 const NAVBAR_DATA = [
-  { id: 1, url: "/", label: "Home" },
+  // { id: 1, url: "/", label: "Home" },
   { id: 2, url: "#services", label: "Features" },
-  { id: 3, url: "#about-us", label: "About us" },
-  { id: 4, url: "#testimonials", label: "Team" },
-  { id: 5, url: "#footer", label: "Contacts" }
+  { id: 3, url: "#about-us", label: "Details" },
+  { id: 4, url: "#testimonials", label: "Our Team" },
+  { id: 5, url: "#footer", label: "Contact Us" }
 ];
 const BANNER_DATA = {
   HEADING: "Svelte performance monitoring with Svelcro",
   DECRIPTION:
-    "Svelcro can help you view application architecture, component state, and performance information like render counts and times",
+    "Svelcro can help you view application architecture, component state, and performance information such as render count and time",
   TUTORIAL_URL:
-    "images/github.png",
-  WATCH_TUTORIAL: "Contribute"
+    "https://github.com/oslabs-beta/Svelcro",
+  DOWNLOAD: "Download"
 };
 const SERVICE_DATA = {
   HEADING: "Features",
-  ALL_SERVICES: "All Services",
   SERVICE_LIST: [
     {
-      LABEL: "Component Dependency Visualization",
+      LABEL: "Component Dependencies",
       DESCRIPTION:
-        "To customise the content, technical functionality and scope of your website so that your pages show for a specific set of keyword at the top of a search engine list. In the end, the goal is to attract traffic to your website when they are searching for goods, services or business-related information.",
-      URL: "images/service1.png"
+        "Visualize your Svelte components in a component tree or hierarchy",
+      URL: ""
     },
     {
       LABEL: "Visualize State",
       DESCRIPTION:
-        "It is tough but well worth the effort to create clever material that is not promotional in nature, but rather educates and inspires. It lets them see you as a reliable source of information by delivering content that is meaningful to your audience.",
-      URL: "images/service2.png"
+        "Display component specific state and properties",
+      URL: ""
     },
     {
       LABEL: "Component Render Tracking",
       DESCRIPTION:
-        "Many People rely on social networks to discover, research, and educate themselves about a brand before engaging with that organization. The more your audience wants to engage with your content, the more likely it is that they will want to share it.",
-      URL: "images/service3.png"
+        "Monitor component rendering performance through time and count graphs",
+      URL: ""
     }
   ]
 };
 
 const ABOUT_DATA = {
-  HEADING: "Why choose us?",
-  TITLE: "Why we're different",
-  IMAGE_URL: "images/network.png",
-  WHY_CHOOSE_US_LIST: [
-    "We provides Cost-Effective Digital Marketing than Others.",
-    "High customer statisfaction and experience.",
-    "Marketing efficiency and quick time to value.",
-    "Clear & transparent fee structure.",
-    "We provides Marketing automation which is an integral platform that ties all of your digital marketing together.",
-    "A strong desire to establish long lasting business partnerships.",
-    "Provide digital marketing to mobile consumer.",
-    "We provides wide range to services in reasonable prices"
-  ]
-};
+  DATA: [{
+  TITLE: "Visualize your component structure",
+  DETAILS: "This can be visualized as a component dependency tree or hierarchy",
+  IMAGE_URL: "images/component-tree-hierarchy.gif",
+  ID: "tree"
+  //fix image URL 
+},
+{
+  TITLE: "View state and component properties",
+  DETAILS: "State and component specific properties with automatically populate after user inputs or actions",
+  IMAGE_URL: "images/state-change.gif",
+  ID: "state"
+  //fix image URL 
+},
+{
+  TITLE: "Monitor component render times",
+  DETAILS: "The profiler tracks how many milliseconds it takes for each component to render",
+  IMAGE_URL: "images/render-times.gif",
+  ID: "time"
+  //fix image URL 
+},
+{
+  TITLE: "Track component re-renders",
+  DETAILS: "The profiler also keeps track of how many times each component has rendered",
+  IMAGE_URL: "images/render-count.gif",
+  ID: "count"
+  //fix image URL 
+}
+]};
+
+
+
 const TESTIMONIAL_DATA = {
   HEADING: "Our Team",
   TESTIMONIAL_LIST: [
     {
     //   DESCRIPTION:
     //     "Nixalar has made a huge difference to our business with his good work and knowledge of SEO and business to business marketing techniques. Our search engine rankings are better than ever and we are getting more people contacting us thanks to Jomer’s knowledge and hard work.",
-      IMAGE_URL: "images/user1.jpg",
+      IMAGE_URL: "images/ming.jpg",
       NAME: "Yanming Yu",
-      DESIGNATION: "Software Engineer"
+      DESIGNATION: "Software Engineer",
+      GITHUB: "https://github.com/jimmyjameswong",
+      LINKEDIN: "https://www.linkedin.com/in/yanmingyu/"
     },
     {
     //   DESCRIPTION:
     //     "Nixalar and his team have provided us with a comprehensive, fast and well planned digital marketing strategy that has yielded great results in terms of content, SEO, Social Media. His team are a pleasure to work with, as well as being fast to respond and adapt to the needs of your brand.",
-      IMAGE_URL: "images/user2.jpg",
+      IMAGE_URL: "images/rankin6.jpg",
       NAME: "Rankin Draa",
-      DESIGNATION: "Software Engineer"
+      DESIGNATION: "Software Engineer",
+      GITHUB: "https://github.com/rankind94",
+      LINKEDIN: "https://www.linkedin.com/in/rankin-draa/"
+      
     },
     {
         // DESCRIPTION:
         //   "Nixalar and his team have provided us with a comprehensive, fast and well planned digital marketing strategy that has yielded great results in terms of content, SEO, Social Media. His team are a pleasure to work with, as well as being fast to respond and adapt to the needs of your brand.",
         IMAGE_URL: "images/sara.png",
         NAME: "Sara Kivikas",
-        DESIGNATION: "Software Engineer"
+        DESIGNATION: "Software Engineer",
+        GITHUB: "https://www.github.com/skivikas",
+        LINKEDIN: "https://www.linkedin.com/in/sara-kivikas/",
+
       },
       {
         // DESCRIPTION:
         //   "Nixalar and his team have provided us with a comprehensive, fast and well planned digital marketing strategy that has yielded great results in terms of content, SEO, Social Media. His team are a pleasure to work with, as well as being fast to respond and adapt to the needs of your brand.",
-        IMAGE_URL: "images/user2.jpg",
+        IMAGE_URL: "images/zack5.jpg",
         NAME: "Zack Daniels",
-        DESIGNATION: "Software Engineer"
+        DESIGNATION: "Software Engineer",
+        GITHUB: "https://github.com/zackdaniels",
+        LINKEDIN:"https://www.linkedin.com/in/zackdanielsnyc/"
       }
   ]
 };
 
 const SOCIAL_DATA = {
   HEADING: "Find us on social media",
-  IMAGES_LIST: [
-    "images/facebook-icon.png",
-    "images/instagram-icon.png",
-    "images/whatsapp-icon.png",
-    "images/twitter-icon.png",
-    "images/linkedin-icon.png",
-    "images/snapchat-icon.png"
-  ]
+  IMAGES_LIST: [ {
+      ICON: "images/linkedin-icon.png",
+      URL: "https://www.linkedin.com/company/85416527/admin/"
+  },
+   {
+      ICON:"images/twitter-icon.png",
+      URL: "https://twitter.com/SvelcroDT"
+   },
+   {
+       ICON: "images/facebook-icon.png",
+       URL: "https://www.facebook.com/Svelcro"
+
+   }
+]
 };
 
 const FOOTER_DATA = {

@@ -2,7 +2,7 @@
 
 <script>
     export let serviceData = {};
-    const { HEADING, ALL_SERVICES, SERVICE_LIST } = serviceData;
+    const { HEADING, SERVICE_LIST } = serviceData;
   </script>
   
   <!------------------------------------------->
@@ -14,21 +14,47 @@
       <div class="row section-body">
         {#each SERVICE_LIST as list}
           <div class="col-md-4 service">
-            <img src={list.URL} alt={list.LABEL} class="service-img" />
+            <!-- <img src={list.URL} alt={list.LABEL} class="service-img" /> -->
             <h4>{list.LABEL}</h4>
             <p>{list.DESCRIPTION}</p>
           </div>
         {/each}
       </div>
-      <buttom class="btn btn-primary round-border main-bgcolor">
-        {ALL_SERVICES}
-      </buttom>
     </div>
   </section>
   <!------------------------------------------->
   <!----------------STYLE----------------------->
   <!------------------------------------------->
   <style>
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      align-content: center;
+      padding: 30px;
+    
+    }
+    .row h4 {
+      font-size: 20px;
+      color: #ff4000c2;
+    }
+    .row p {
+      /* text-align: left; */
+    }
+    .col-md-4 {
+      
+      border: 1px solid #ff40004b;
+      border-radius: 20px;
+      max-width: 300px;
+      height: 200px;
+      background-image: linear-gradient(to top left, #ff400083, #ff400000);
+      box-shadow: 5px 5px 5px 5px rgb(21, 21, 21);
+      text-align: center;
+  
+    }
+    .col-md-4:hover {
+      border: 1px solid #ff3e00;
+    }
     .service-img {
       width: 200px;
       height: 200px;
@@ -38,40 +64,24 @@
     .service h4 {
       padding: 5px;
       margin-top: 25px;
-      text-transform: uppercase;
+     
+    }
+    #services {
+        color: f1f1f1;
     }
   
     .title {
       text-transform: uppercase;
     }
   
-    .title::before {
-      content: "";
-      background: linear-gradient(90deg, #ff3e00 0%, #00d4ff 100%);
-      height: 5px;
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      transform: translateY(60px);
-    }
-  
-    .title::after {
-      content: "";
-      background: linear-gradient(90deg, #ff3e00 0%, #00d4ff 100%);
-      height: 10px;
-      width: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 40px;
-      display: block;
-      transform: translateY(14px);
-    }
-  
     section .btn-primary {
       box-shadow: none;
       padding: 8px 25px;
       border: none;
+      
+    }
+    .section {
+      background-color: #1f1f1f;
     }
 
     .btn {
