@@ -139,7 +139,7 @@ const FOOTER_DATA = {
     "Svelcro is Open Source. Help make our tool even better:",
   CONTACT_DETAILS: {
     HEADING: "Contact us",
-    EMAIL: "sveltedt@gmail.com"
+    EMAIL: "svelcrodt@gmail.com"
   },
   SUBSCRIBE_NEWSLETTER: "Subscribe newsletter",
   SUBSCRIBE: "Subscribe"
